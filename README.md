@@ -114,8 +114,8 @@ $ make view-cov
   
 ## Credits
   
- -  - [Siddarth Ramesh](http://github.com/siddarthramesh)
- +  - Forked from [passport-github](https://github.com/jaredhanson/passport-github) by [Jared Hanson](https://github.com/jaredhanson)
+ -  [Siddarth Ramesh](http://github.com/siddarthramesh)
+ +  Forked from [passport-github](https://github.com/jaredhanson/passport-github) by [Jared Hanson](https://github.com/jaredhanson)
 
 ## License
 
