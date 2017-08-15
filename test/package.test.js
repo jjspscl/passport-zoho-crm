@@ -2,7 +2,7 @@
 
 var strategy = require('..');
 
-describe('passport-github', function() {
+describe('passport-zoho-crm', function() {
     
   it('should export Strategy constructor', function() {
     expect(strategy.Strategy).to.be.a('function');

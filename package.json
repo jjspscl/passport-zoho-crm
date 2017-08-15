@@ -1,26 +1,26 @@
 {
-  "name": "passport-github",
-  "version": "1.1.0",
-  "description": "GitHub authentication strategy for Passport.",
+  "name": "passport-zoho-crm",
+  "version": "0.1.0",
+  "description": "Zoho CRM authentication strategy for Passport.",
   "keywords": [
     "passport",
-    "github",
+    "zohocrm",
     "auth",
     "authn",
     "authentication",
     "identity"
   ],
   "author": {
-    "name": "Jared Hanson",
-    "email": "jaredhanson@gmail.com",
-    "url": "http://www.jaredhanson.net/"
+    "name": "Sid Ramesh",
+    "email": "sidrmsh@gmail.com",
+    "url": "http://www.siddarthramesh.com"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/jaredhanson/passport-github.git"
+    "url": "http://github.com/siddarthramesh/passport-zoho-crm.git"
   },
   "bugs": {
-    "url": "http://github.com/jaredhanson/passport-github/issues"
+    "url": "http://github.com/jaredhanson/passport-zoho-crm/issues"
   },
   "license": "MIT",
   "licenses": [

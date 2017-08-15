@@ -7,24 +7,21 @@ var $require = require('proxyquire')
   , path =require('path')
   , fs = require('fs')
   , existsSync = fs.existsSync || path.existsSync // node <=0.6
-  , GitHubStrategy = require('../lib/strategy');
+  , ZohoCRMStrategy = require('../lib/strategy');
 
 
 describe('Strategy', function() {
   
   describe('constructed', function() {
-    var strategy = new GitHubStrategy({
+    var strategy = new ZohoCRMStrategy({
       clientID: 'ABC123',
       clientSecret: 'secret'
     }, function() {});
     
-    it('should be named github', function() {
-      expect(strategy.name).to.equal('github');
+    it('should be named zoho-crm', function() {
+      expect(strategy.name).to.equal('zoho-crm');
     });
 
-    it('should have default user agent', function() {
-      expect(strategy._oauth2._customHeaders['User-Agent']).to.equal('passport-github');
-    });
   })
   
   describe('constructed with undefined options', function() {
