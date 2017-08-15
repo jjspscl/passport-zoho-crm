@@ -54,7 +54,7 @@ passport.use(new ZohoCRMStrategy({
     redirect_URL: "http://127.0.0.1:3000/auth/zohocrm/callback"
     scope: 'ZohoCRM.modules.READ',
     response_type: 'code',
-    access_type: 'Offline'
+    access_type: 'offline'
   },
   function(accessToken, refreshToken, profile, cb) {
     // ...
