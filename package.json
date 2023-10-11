@@ -29,21 +29,24 @@
       "url": "http://opensource.org/licenses/MIT"
     }
   ],
-  "main": "./lib",
+  "main": "./dist/index.js",
   "dependencies": {
-    "passport-oauth2": "1.x.x"
+    "passport-oauth2": "1.7.0"
   },
   "devDependencies": {
-    "make-node": "0.3.x",
-    "mocha": "1.x.x",
     "chai": "2.x.x",
     "chai-passport-strategy": "1.x.x",
-    "proxyquire": "1.4.x"
+    "esbuild": "^0.19.4",
+    "make-node": "0.3.x",
+    "mocha": "1.x.x",
+    "proxyquire": "1.4.x",
+    "rimraf": "^5.0.5"
   },
   "engines": {
     "node": ">= 0.4.0"
   },
   "scripts": {
+    "build": "rimraf dist; esbuild ./lib/index.js --outdir=dist --bundle --minify --platform=node",
     "test": "node_modules/.bin/mocha --require test/bootstrap/node test/*.test.js"
   }
 }
